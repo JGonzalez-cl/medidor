@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <meta charset="UTF-8">
+    <title>Rick and Morty - Personaje Random</title>
+    <style>
+        .card {
+            width: 300px;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 15px;
+            box-shadow: 0 0 10px rgba(0,0,0,0.2);
+            text-align: center;
+            font-family: Arial, sans-serif;
+        }
+        .card img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .card h2 {
+            margin: 15px 0 10px;
+        }
+        .card p {
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+<div class="card">
+    <img th:src="${character.image}" alt="Imagen del personaje">
+    <h2 th:text="${character.name}">Nombre</h2>
+    <p><strong>Especie:</strong> <span th:text="${character.species}">Especie</span></p>
+    <p><strong>Estado:</strong> <span th:text="${character.status}">Estado</span></p>
+    <p><strong>Origen:</strong> <span th:text="${character.origin.name}">Origen</span></p>
+</div>
+</body>
+</html>
