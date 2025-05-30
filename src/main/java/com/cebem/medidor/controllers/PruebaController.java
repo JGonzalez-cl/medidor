@@ -13,8 +13,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseStatus;
 import org.springframework.web.bind.annotation.RestController;
 
-import com.cebem.medidor.models.Measure;
-import com.cebem.medidor.repositories.MeasureRepository;
+/*import com.cebem.medidor.models.Measure;
+import com.cebem.medidor.repositories.MeasureRepository;*/
 import com.cebem.medidor.repositories.SuperheroRepository;
 
 import lombok.AllArgsConstructor;
@@ -56,7 +56,7 @@ public class PruebaController {
     }
 
     // Inyeccion de dependencias
-    private final MeasureRepository sensorDataRepository;
+    /*private final MeasureRepository sensorDataRepository;
 
     @PostMapping("/saveMeasure")
     @ResponseStatus(HttpStatus.CREATED)
@@ -75,7 +75,7 @@ public class PruebaController {
     public ResponseEntity<List<Measure>> getAllSensorData() {
         List<Measure> sensorData = sensorDataRepository.findAll();
         return ResponseEntity.ok(sensorData);
-    }
+    }*/
 
     // Ejercicio 4 endpoints
 

@@ -1,4 +1,4 @@
-package com.cebem.medidor.models;
+/*package com.cebem.medidor.models;
 
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
@@ -23,4 +23,4 @@ public class Films {
     private String name;
     private String genre;
 
-}
+}*/

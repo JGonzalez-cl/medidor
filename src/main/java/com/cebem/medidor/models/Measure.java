@@ -1,4 +1,4 @@
-package com.cebem.medidor.models;
+/*package com.cebem.medidor.models;
 
 import java.time.LocalDateTime;
 
@@ -28,4 +28,4 @@ public class Measure {
     private LocalDateTime createdAt = LocalDateTime.now();
     private String mac;
 
-}
+}*/
